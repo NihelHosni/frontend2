@@ -1,0 +1,92 @@
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Agence Immobilière  </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://localhost:4200/login"> Agent 
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+          <h1 class="my-4">Page Heading
+            <small>Secondary Text</small>
+          </h1>
+
+<!-- <table>
+  <thead>
+<tr>
+  <td>id </td>
+  <td>emplacement</td>
+  <td>type </td>
+  <td> date</td>
+  <td> prix</td>
+  <td>photo</td>
+</tr>
+  </thead>
+  <tbody>
+
+<tr *ngFor="let article of articals">
+  <td>{{article.id}}</td>
+  <td>{{article.emplacement}}</td>
+  <td>{{article.type }}</td>
+  <td>{{article.date}}</td>
+  <td>{{article.prix}}</td>
+  <td>{{article.photo}}</td>
+</tr>
+
+  </tbody>
+</table>
+
+ -->
+          <!-- Blog Post -->
+          <div class="card mb-4" *ngFor="let article of articals">
+            <img class="card-img-top" src={{article.photo}} alt="Card image cap">
+            <div class="card-body">{{article.date}}
+              <h2 class="card-title">{{article.type }}</h2>
+              <p class="card-text">emplacement:{{article.emplacement}},prix:{{article.prix}}{{article.date}}</p>
+              <a href="#" class="btn btn-primary">Lire la suite &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+                {{article.date}}
+              <a href="#">Start Bootstrap</a>
+            </div>
+          </div>
+</div>
+</div>
+
+          
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
